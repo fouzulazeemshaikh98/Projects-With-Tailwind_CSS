@@ -1,0 +1,5 @@
+@media screen  and (max-width: 110rem){
+    .responsive-nav {
+        flex-direction: column;
+    }
+}

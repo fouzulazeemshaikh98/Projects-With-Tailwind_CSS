@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo-trane-logo-white-tagline.svg">
+    <title>Trane Air Conditioners</title>
+    <style>
+        img {
+            /* position: absolute; */
+            cursor: pointer;
+            opacity: 1;
+            transition: 2s;
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .productsContainer {
+            position: absolute;
+            background-color: rgb(221, 221, 221);
+            padding: 10rem;
+            width: 370%;
+            height: 100vh;
+            margin: 0 auto;
+            top: -50%;
+            right: -260%;
+            z-index: 20;
+            border-radius: .4rem;
+        }
+
+        .cartImg {
+            /* background-image: url(Images/3.png); */
+            /* background-size: cover; */
+            /* background-position: left; */
+            width: 50%;
+            transform: translate(-30%, 50%);
+        }
+
+        .cartaddBtn {
+            background-color: black;
+            color: white;
+            padding: 1rem 2rem 1rem 2rem;
+            font-size: 1rem;
+            border-radius: .4rem;
+            font-weight: 600;
+            margin-top: 3rem;
+            transform: translateY(200%);
+            display: block;
+
+        }
+    </style>
+    <!-- Tailwind Js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font-Awesome-Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font-Awesome-Icons -->
+    <!-- Custom Font Fanily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <!-- Tailwind Imp JS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'urbanist': ['Urbanist', 'sans-serif'],
+                    }
+                },
+            },
+        }
+    </script>
+    <!-- Tailwind Imp CSS -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+
+<body class="font-urbanist text-[10px]">
+    <!-- ============================================== Header Starts Here============================================== -->
+    <!-- <div class="banner text-center bg-black text-white py-4 text-[.9rem] font-[600] ">
+        Shipping All Over
+        Pakistan 🇵🇰</div> -->
+    <header>
+        <nav class=" py-4 bg-black">
+            <div class="container mx-auto w-[85%] flex items-center justify-between mt-6 responsive-nav -translate-y-2 border-double border-[5px] px-12 py-4 rounded-[1rem] border-gray-900 bg-black">
+                <div class="logo flex items-center justify-center">
+                    <a href="#">
+                        <img src="Images/logo-trane-logo-white-tagline.svg" alt="" width="100">
+                    </a>
+                </div>
+                <ul class="primaryNav flex items-center justify-center gap-12 " >
+                    <li><a href="#" class="text-sm font-bold text-white">Home</a></li>
+                    <li><a href="#Gree" class="text-sm font-bold text-white " id="hero">Services</a></li>
+                    <li><a href="#About-US" class="text-sm font-bold text-white">About US</a></li>
+                    <li><a href="#salesContent" class="text-sm font-bold text-white">Products</a></li>
+                    <li><a href="#Contact-US" class="text-sm font-bold text-white">Contact US</a></li>
+                </ul>
+
+                <ul class="secondaryNav flex items-center gap-4">
+                    <a href="#">
+                        <!-- <img class="text-white" src="Images2/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9InByZXNlbnRhdGlvbiIgc3Ryb2tlLXdpZHRoPSIyIiBmb2N1c2FibGU9ImZhbHNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIGNsYXNzP.svg"
+                            alt=""> -->
+                            <i class="fa-solid fa-magnifying-glass text-white text-[1rem]"></i>
+                    </a>
+                    <a href="#">
+                        <!-- <img src="Images2/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9InByZXNlbnRhdGlvbiIgc3Ryb2tlLXdpZHRoPSIyIiBmb2N1c2FibGU9ImZhbHNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIGNsYXNzPSJpY29u.svg"
+                            alt=""> -->
+                            <i class="fa-solid fa-bag-shopping text-white text-[1rem]"></i>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================== Header Starts Here============================================== -->
+    <main>
+
+        <!-- Hero-Section -->
+        <section>
+            <img src="Images/fujitsu-split-system-air-conditioner_1500x800_crop_center.webp" class="h-[80vh] block w-[100%] ">
+        </section>
+        <!-- Hero-Section -->
+
+        <!-- Sales-Section -->
+        <section id="Sales">
+            <div class="container mx-auto w-[85%] flex justify-between mt-36">
+                <h1 class="text-5xl font-[900] text-center translate-x-[32rem] ">PRODUCTS</h1>
+            </div>
+        </section>
+        <!-- Sales-Section -->
+
+        <section id="salesContent">
+            <div class="container mx-auto w-[90%] flex justify-between mt-24">
+                <!-- <div class="search">
+                    <input type="text" placeholder="Search Products"
+                        class="outline-none  border-[1px] w-[80rem] py-3 px-3 text-[.9rem] rounded-[.5rem] font-[600] text-gray-500">
+                </div> -->
+            </div>
+            <div class="container mx-auto w-[90%] mt-12">
+                <div class="list flex justify-between">
+                    <div class="listText">
+                        <h4 class="text-[.9rem]"><span class="font-semibold">612</span> Products</h4>
+                    </div>
+                    <div class="c flex gap-x-4 items-center">
+                        <div class="listContent bg-gray-200 h-4 items-center relative">
+                            <select class="bg-gray-100 outline-none cursor-pointer py-2 px-3 text-[.7rem]">
+                                <option value="48" class="text-[.8rem] block mt-4">48</option>
+                                <option value="24" class="text-[.8rem] block mt-4">24</option>
+                                <option value="12" class="text-[.8rem] block mt-4">12</option>
+                            </select>
+                        </div>
+                        <div class="listContent bg-gray-200 h-4 items-center">
+                            <select class="bg-gray-100 outline-none cursor-pointer py-2 px-3 text-[.7rem]">
+                                <option value=" Best Selling" class="text-[.8rem] block py-2 bg-gray-200 mt-4"> Best
+                                    Selling</option>
+                                <option value="Price High to Low" class="text-[.8rem] bg-gray-200 mt-4">Price High to
+                                    Low</option>
+                                <option value="Price Low to High" class="text-[.8rem] bg-gray-200 mt-4">Price Low to
+                                    High</option>
+                                <option value="Alphabeticaly" class="text-[.8rem] bg-gray-200 mt-4">Alphabeticaly
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container mx-auto w-[90%] mt-12 flex justify-center gap-x-4">
+            <button class="inline-block bg-black text-white py-2 px-6 text-[.8rem] font-semibold rounded-[10rem]"
+                onclick="Home()">HOME</button>
+            <button class="inline-block bg-black text-white py-2 px-6 text-[.8rem] font-semibold rounded-[10rem]"
+                onclick="getOrient()">ORIENT</button>
+            <button class="inline-block bg-black text-white py-2 px-6 text-[.8rem] font-semibold rounded-[10rem]"
+                onclick="getGree()">GREE</button>
+            <button class="inline-block bg-black text-white py-2 px-6 text-[.8rem] font-semibold rounded-[10rem]"
+                onclick="getAria()">ARIA</button>
+            <button class="inline-block bg-black text-white py-2 px-6 text-[.8rem] font-semibold rounded-[10rem]"
+                onclick="getPel()">PEL</button>
+            <button class="inline-block bg-black text-white py-2 px-6 text-[.8rem] font-semibold rounded-[10rem]"
+                onclick="getKenwood()">KENWOOD</button>
+        </div>
+
+
+        <!-- items-section -->
+        <section id="items">
+            <!-- container  1-->
+            <div class="container mx-auto w-[70%] flex justify-between mt-36" id="Orient">
+                <!-- items -->
+                <div class="items flex gap-[7rem] justify-center items-center">
+                    <!-- content -->
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] translate-y-12 cursor-pointer">
+                            Save Rs. 10,000</p>
+                        <figure id="fig1">
+                            <img id="img1" onclick="Orient1()" class="-translate-x-10"
+                                src="Images/VenusDCInverter_59ea0353-38ef-4792-8a04-241457fc8511_2000x_crop_center.webp"
+                                alt="" width="500">
+                        </figure>
+                        <span>ORIENT</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer ">ORIENT DC INVERTER 1.5TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem] ">Rs.86,000 <del class="text-gray-600"> Rs.96,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class=" translate-y-12 bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 11,000</p>
+                        <figure id="fig2">
+                            <img onclick="Orient2()" class="-translate-x-10"
+                                src="Images/OrbitDCInverter_2000x_crop_center.webp" alt="" width="500">
+                        </figure>
+                        <span>ORIENT</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">ORIENT DC INVERTER 1TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.75,000 <del class="text-gray-600"> Rs.86,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer translate-y-12">
+                            Save Rs.16,000</p>
+                        <figure id="fig3">
+                            <img onclick="Orient3()" class="-translate-x-10"
+                                src="Images/SupremeDCInverter_2000x_crop_center.webp" alt="" width="500">
+                        </figure>
+                        <span>ORIENT</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">ORIENT DC INVERTER 2TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.120,000 <del class="text-gray-600"> Rs.136,000</del></p>
+                    </div>
+                    <!-- content -->
+                </div>
+                <!-- items -->
+            </div>
+            <!-- container 1 -->
+
+
+
+            <!-- container 2-->
+            <div class="container mx-auto w-[70%] flex justify-between mt-36" id="Gree">
+                <!-- items -->
+                <div class="items flex gap-[7rem] justify-center items-center">
+                    <!-- content -->
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 10,000</p>
+                        <figure id="fig1">
+                            <img onclick="Gree1()" class="-translate-x-10" src="Images/gree1.webp" alt="" width="500">
+                        </figure>
+                        <span>GREE</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">GREE DC INVERTER 1.5TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.86,000 <del class="text-gray-600"> Rs.96,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 11,000</p>
+                        <figure id="fig2">
+                            <img onclick="Gree2()" class="-translate-x-10" src="Images/gree2.webp" alt="" width="500">
+                        </figure>
+                        <span>GREE</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">GREE DC INVERTER 1 TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.75,000 <del class="text-gray-600"> Rs.86,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs.16,000</p>
+                        <figure id="fig3">
+                            <img onclick="Gree3()" class="-translate-x-10" src="Images/gree3.webp" alt="" width="500">
+                        </figure>
+                        <span>GREE</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">GREE DC INVERTER 2 TON
+                            LARGE
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.120,000 <del class="text-gray-600"> Rs.136,000 </del>
+                        </p>
+                    </div>
+                    <!-- content -->
+                </div>
+                <!-- items -->
+            </div>
+            <!-- container 2-->
+
+
+
+            <!-- container 3-->
+            <div class="container mx-auto w-[70%] flex justify-between mt-36" id="Aria">
+                <!-- items -->
+                <div class="items flex gap-[7rem] justify-center items-center">
+                    <!-- content -->
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 10,000</p>
+                        <figure id="fig1">
+                            <img onclick="Aria1()" class="mt-12 -translate-x-5" src="Images/1.png" alt="" width="500">
+                        </figure>
+                        <div class="mt-4">
+                            <span>ARIA</span>
+                            <p class="font-bold text-[.9rem] cursor-pointer">ARIA DC INVERTER 1.5 TON
+                            </p>
+                        </div>
+                        <p class="text-red-600 text-[.9rem]">Rs.86,000 <del class="text-gray-600"> Rs.96,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 11,000
+                        </p>
+                        <figure id="fig2">
+                            <img onclick="Aria2()" class="mt-12 -translate-x-5" src="Images/2.png" alt="" width="500">
+                        </figure>
+                        <div class="mt-4">
+                            <span>TCL</span>
+                            <p class="font-bold text-[.9rem] cursor-pointer">ARIA DC INVERTER 1 TON
+                            </p>
+                        </div>
+                        <p class="text-red-600 text-[.9rem]">Rs.75,000 <del class="text-gray-600"> Rs.86,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs.16,000</p>
+                        <figure id="fig3">
+                            <img onclick="Aria3()" class="mt-12 -translate-x-5" src="Images/3.png" alt="" width="500">
+                        </figure>
+                        <div class="mt-4">
+                            <span>ARIA</span>
+                            <p class="font-bold text-[.9rem] cursor-pointer">ARIA DC INVERTER 2 TON
+                            </p>
+                        </div>
+                        <p class="text-red-600 text-[.9rem]">Rs.120,000 <del class="text-gray-600"> Rs.136,000</del></p>
+                    </div>
+                    <!-- content -->
+                </div>
+                <!-- items -->
+            </div>
+            <!-- container 3-->
+
+
+
+
+
+            <!-- container 4-->
+            <div class="container mx-auto w-[70%] flex justify-between mt-36" id="Pel">
+                <!-- items -->
+                <div class="items flex gap-[7rem] justify-center items-center">
+                    <!-- content -->
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 10,000</p>
+                        <figure id="fig1">
+                            <img onclick="Pel1()" class="-translate-x-8" src="Images/pel 1.webp" alt="" width="500">
+                        </figure>
+                        <span>PEL</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">PEL DC INVERTER 1.5 TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.86,000 <del class="text-gray-600"> Rs.96,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 11,000</p>
+                        <figure id="fig2">
+                            <img onclick="Pel2()" class="-translate-x-8" src="Images/Pel 2.avif" alt="" width="500">
+                        </figure>
+                        <span>PEL</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">PEL DC INVERTER 1 TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.75,000 <del class="text-gray-600"> Rs.86,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs.16,000</p>
+                        <figure id="fig3">
+                            <img onclick="Pel3()" class="-translate-x-8" src="Images/pel 3.avif" alt="" width="500">
+                        </figure>
+                        <span>PEL</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">PEL DC INVERTER 2 TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.120,000 <del class="text-gray-600"> Rs.136,000</del></p>
+                    </div>
+                    <!-- content -->
+                </div>
+                <!-- items -->
+            </div>
+            <!-- container 4-->
+
+
+
+            <!-- container 5-->
+            <div class="container mx-auto w-[70%] flex justify-between mt-36" id="kenwood">
+                <!-- items -->
+                <div class="items flex gap-[7rem] justify-center items-center">
+                    <!-- content -->
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 10,000</p>
+                        <figure id="fig1">
+                            <img onclick="ken1()" id="ken1" class="-translate-x-8" src="Images/kenwood 1.avif" alt=""
+                                width="500">
+                        </figure>
+                        <span>KENWOOD</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">KENWOOD DC INVERTER 1.5 TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.86,000 <del class="text-gray-600"> Rs.96,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs. 11,000</p>
+                        <figure id="fig2">
+                            <img onclick="ken2()" class="-translate-x-12" src="Images/kenwood 2.avif" alt=""
+                                width="500">
+                        </figure>
+                        <span>TCL</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">KENWOOD DC INVERTER 1 TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.75,000 <del class="text-gray-600"> Rs.86,000</del></p>
+                    </div>
+                    <div class="content">
+                        <p
+                            class="bg-[#F83A3A] text-white inline-block py-1 px-2 font-semibold  rounded-[4rem] cursor-pointer">
+                            Save Rs.16,000</p>
+                        <figure id="fig3">
+                            <img onclick="ken3()" class="-translate-x-12" src="Images/kenwood 3.avif" alt=""
+                                width="500">
+                        </figure>
+                        <span>KENWOOD</span>
+                        <p class="font-bold text-[.9rem] cursor-pointer">KENWOOD DC INVERTER 2 TON
+                        </p>
+                        <p class="text-red-600 text-[.9rem]">Rs.120,000 <del class="text-gray-600"> Rs.136,000</del></p>
+                        <!-- content -->
+                    </div>
+                    <!-- items -->
+                </div>
+                <!-- container 5-->
+        </section>
+        <!-- items-section -->
+
+        <!-- numbers-section -->
+        <section id="numbers">
+
+            <!-- numbers-container -->
+            <div class="container mx-auto w-[80%] flex justify-center mt-36 items-center">
+                <div
+                    class="numbers flex justify-center items-center gap-[3rem] border-[.1rem] w-[100%] rounded-[10rem] cursor-pointer">
+                    <span class="text-[1rem] inline-block text-gray-700 font-bold">1</span>
+                    <span
+                        class="text-[1rem] inline-block text-gray-700 hover:text-gray-900 hover:font-extrabold">2</span>
+                    <span
+                        class="text-[1rem] inline-block text-gray-700 hover:text-gray-900 hover:font-extrabold">3</span>
+                    <span class="text-[2rem] inline-block -translate-y-1 text-gray-700">...</span>
+                    <span
+                        class="text-[1rem] inline-block text-gray-700 hover:text-gray-900 hover:font-extrabold">13</span>
+                    <span
+                        class="text-[1rem] inline-block translate-y-1 text-gray-700 hover:text-gray-900 hover:font-extrabold">--></span>
+                </div>
+            </div>
+            <!-- numbers-container -->
+        </section>
+        <!-- numbers-section -->
+
+    </main>
+
+    <!-- About_us section -->
+    <section id="About-US">
+        <!-- about us container -->
+        <div class="container mx-auto w-[80%]">
+            <div class="about-content">
+                <h1 class="text-5xl font-[900] text-center mt-36 ">ABOUT US</h1>
+                <p class="mt-12">
+                <p class="text-[1.2rem]  leading-loose">
+                    Welcome to Our Store, where comfort meets innovation. As a leading provider of cutting-edge
+                    air conditioning solutions, we take pride in creating environments that are cool, comfortable, and
+                    conducive to your well-being. Our commitment is to deliver superior products and services that
+                    redefine
+                    the standards of air conditioning technology. ensuring optimal performance, energy efficiency, and
+                    smart functionality. Stay in control of your comfort with our state-of-the-art solutions.
+                </p>
+
+                <div class="reason flex flex-col gap-y-4 mt-12">
+                    <h3 class="text-[1.4rem] font-semibold"><i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="ms-3">Why Choose Us</span>
+                        ::
+                    </h3>
+                    <p class="text-[1rem] ms-10"> Innovative Technology: Our air conditioning units are equipped with
+                        the
+                        latest technological
+                        advancements, ensuring optimal performance, energy efficiency, and smart functionality. Stay in
+                        control
+                        of your comfort with our state-of-the-art solutions. </p>
+                    <h3 class="text-[1.4rem] font-semibold"><i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="ms-3">Energy Efficiency ::</span>
+                    </h3>
+                    <p class="text-[1rem] ms-10">We are committed to sustainability. Our air conditioners are designed
+                        with energy
+                        efficiency in mind, helping you reduce your carbon footprint and save on energy costs while
+                        enjoying the
+                        perfect indoor climate.</p>
+                    <h3 class="text-[1.4rem] font-semibold"><i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="ms-3">
+                            Reliability
+                        </span>
+                        ::
+                    </h3>
+                    <p class="text-[1rem] ms-10">Trust is the cornerstone of our business. Our products undergo rigorous
+                        testing to ensure
+                        durability and reliability, providing you with peace of mind and comfort for years to come.</p>
+                    <h3 class="text-[1.4rem] font-semibold"><i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="ms-3">
+                            Exceptional
+                            Customer Service ::
+                    </h3>
+                    </span>
+                    <p class="text-[1rem] ms-10">
+                        We believe in building lasting relationships with our customers. Our
+                        dedicated customer service team is here to assist you with any inquiries, from product selection
+                        to
+                        after-sales support.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- about us container -->
+    </section>
+    <!-- About_us section -->
+
+    <section id="Contact-US">
+        <!-- about us container -->
+        <div class="container mx-auto w-[80%] mt-2 rounded-[1rem]">
+            <div class="Contact-content rounded-[1rem]">
+                <h1 class="text-5xl font-[900] text-center mt-36 -translate-x-8">CONTACT US</h1>
+                <br>
+                <form class="grid grid-cols-2 mt-8 translate-x-32 ">
+
+                    <div class="form-left bg-black py-12 px-12 flex flex-col gap-y-4 rounded-[.3rem]">
+
+                        <h2 class="text-white text-[1.2rem] font-semibold">Get In Touch</h2>
+                        <div class="flex gap-x-4">
+                            <input type="text" placeholder="Enter Your Name"
+                                class="border-[.1rem] border-gray-200 py-3 px-6 rounded-[.3rem] font-bold text-black text-[.7rem] w-[40%] outline-none">
+                            <input type="Email" placeholder="Email"
+                                class="border-[.1rem] border-gray-200 py-3 px-6 rounded-[.3rem] font-bold text-black text-[.7rem] w-[40%]  outline-none">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject"
+                                class="border-[.1rem] border-gray-200 py-3 px-6 rounded-[.3rem] font-bold text-black text-[.7rem] w-[83%] outline-none ">
+                        </div>
+                        <div>
+                            <textarea id="" cols="30" rows="10" placeholder="Message"
+                                class="border-[.1rem] border-gray-200 py-2 px-4 rounded-[.3rem] font-bold text-black text-[.7rem] w-[83%] outline-none"></textarea>
+                        </div>
+                        <div>
+                            <input type="button">
+                        </div>
+                    </div>
+
+                    <div class="form-right bg-gray-900 py-12 px-12 flex flex-col gap-y-8 w-[60%] rounded-[.3rem]">
+                        <h2 class="text-white text-[1.2rem] font-semibold">Contact Us</h2>
+                        <div class="text-white text-[1rem]">
+                            <i
+                                class="fa-solid fa-location-dot bg-white text-black py-2 px-[.6rem] rounded-[5rem] text-center block text-[1.3rem] w-[30%] mx-auto"></i>
+                            <a href="#" class="mt-5 block text-center">
+                                Address: 1928 street sh2, Csd colony.
+                            </a>
+                        </div>
+                        <div class="text-white text-[1rem]">
+                            <a href="tel:+923122886103">
+                                <i
+                                    class="fa-solid fa-phone bg-white text-black py-2 px-[.6rem] rounded-[5rem] text-center block text-[1.3rem] w-[30%] mx-auto"></i>
+
+                                <a href="tel:+923122886103" class="mt-5 block text-center">
+                                    Phone: 03122886103</a>
+                            </a>
+                        </div>
+                        <div class="text-white text-[1rem]">
+                            <i
+                                class="fa-solid fa-inbox bg-white text-black py-2 px-[.6rem] rounded-[5rem] text-center block text-[1.3rem] w-[30%] mx-auto"></i>
+                            <a href="mailto:fouzshaikh@outlook.com" class="mt-5 block text-center">
+                                fouzshaikh@outlook.com</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer? -->
+    <footer>
+        <div class="container mx-auto w-[94%] mt-36 grid grid-cols-4">
+            <!-- primary-footer -->
+            <ul class="primary-footer flex flex-col gap-y-[1.2rem]">
+                <h2 class="text-[1rem] font-semibold">Categories</h2>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Orient
+                        DC Inverter</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Gree DC
+                        Inverter</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Aria DC
+                        Inverter</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Pel DC
+                        Inverter</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Kenwood
+                        DC Inverter</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">All
+                        Brands</a>
+                </li>
+            </ul>
+            <!-- primary-footer -->
+
+            <!-- secondary-footer -->
+            <ul class="secondary-footer flex flex-col gap-y-[1.2rem]">
+                <h2 class="text-[1rem] font-semibold"> Contact Us</h2>
+                <li><a href="#">
+                        <h3
+                            class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300  underline underline-offset-2 font-bold">
+                            Sales</h3>
+                    </a></li>
+                <li><a target="_blank" href="https://wa.me/3122886103"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300 underline-offset-4">WhatsApp:
+                        <span class="underline font-semibold">+92-45874794</span> (Tap to Chat)</a></li>
+                <h3
+                    class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300  underline underline-offset-2 font-bold">
+                    Complaints</h3>
+                <a class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300"
+                    href="https://wa.me/3122886103" target="_blank">Owner / CEO: <span
+                        class="underline underline-offset-4"> +92-3122881603</span></a>
+                <li><a href="tel:021-111-123-123"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300 underline underline-offset-4">UAN:
+                        111-123-123</a></li>
+                <li><a target="_blank" href="mailto:fouzshaikh@outlook.com"
+                        class=" text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Email:
+                        <span class="underline underline-offset-4"> fouzshaikh@Outlook.com</span></a></li>
+                <li><a href="#" class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">
+
+                    </a></li>
+            </ul>
+            <!-- secondary-footer -->
+
+            <!-- last-footer -->
+            <ul class="last-footer flex flex-col gap-y-[1.2rem]">
+                <h3 class="text-[1rem] font-semibold">About</h3>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Return
+                        Policy</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Contact
+                        US</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Terms of
+                        Service</a></li>
+                <li><a href="#"
+                        class="text-[1rem] text-gray-500 transition-all hover:text-gray-800 hover:duration-300">Privacy
+                        Policy</a></li>
+            </ul>
+            <!-- last-footer -->
+
+            <!-- news-letter -->
+            <ul class="news-letter w-[80%]">
+                <h1 class="text-[1.8rem] font-bold -mr-[7rem] -translate-x-32">Sign up for Sales & Promotions !</h1>
+                <input type="email" placeholder="Email"
+                    class="-mr-[7rem] -translate-x-32 outline-none border-[.1rem] w-[120%] mt-8 py-4 px-4 text-[.9rem] rounded-[.5rem]">
+            </ul>
+            <!-- news-letter -->
+        </div>
+
+        <!-- sub-footer -->
+        <div class="container sub-footer mx-auto w-[94%] mt-36 flex justify-between items-center">
+            <div class="footer-links">
+                <a href="#">
+                    <i class="fa-brands fa-facebook text-[2rem] inline-block mr-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram text-[2rem] inline-block mr-4"></i>
+                </a>
+                <p class="text-[.9rem] mt-12 text-gray-500">© 2024, Friends Home.</p>
+            </div>
+            <div class="last flex items-center justify-center">
+                <a href="https://wa.me/3122886103" target="_blank">
+                    <span
+                        class="fixed bottom-4 right-20 inline-block -translate-y-2 mr-3 font-semibold text-[1rem] text-gray-700 shadow-lg px-2 py-1 rounded-[1rem] z-20 bg-white">Chat
+                        With
+                        Us</span>
+
+                    <i
+                        class="fixed bottom-4  right-4 fa-brands fa-whatsapp font-bold text-[3.4rem] inline-block mr-4 text-green-700 transition-all hover:duration-500 hover:text-green-900 "></i>
+
+                </a>
+            </div>
+        </div>
+        <!-- sub-footer -->
+    </footer>
+    <!-- footer? -->
+    <br>
+    <script src="Js/app.js"></script>
+    <!-- <a href="Target Folder/kenwood/kenwood1.html"></a> -->
+</body>
+
+</html>

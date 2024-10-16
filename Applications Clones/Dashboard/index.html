@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid rgba(128, 128, 128, 0.39);
+            padding: 20px 50px;
+
+        }
+
+        table td {
+            background-color: black;
+            color: white;
+        }
+
+        .a {
+            display: flex;
+            justify-content: space-around !important;
+        }
+    </style>
+
+</head>
+
+<body class="bodoni-moda">
+    <header>
+
+        <div class="container w-[90%] mx-auto my-5">
+            <div class="dashboard-main flex justify-between items-center">
+                <h1 class="text-[30px] text-gray-600">MAIN DASHBOARD</h1>
+                <p>Pages / Dashboard
+                    <span class="block">Dashboard</span>
+                </p>
+
+                <button
+                    class="border-2 border-gray-100 flex items-center shadow-lg shadow-gray-400 px-4 py-2 rounded-md w-[20%] translate-x-16">
+                    <i class="fas fa-search text-gray-600"></i>
+                    <span class="ml-2 text-gray-800">Search</span>
+                </button>
+                <div class="head-icons flex items-center gap-6">
+                    <a href="#" class=" px-8 py-2 rounded-md uppercase text-[14px] bg-black text-white">
+                        Logout</a>
+                    <a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        Sign In
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="side-bar">
+        <div class="container w-[100%] mx-auto my-8">
+            <div class="wraper grid grid-cols-9 shadow-md w-auto text-center shadow-gray-900 px-8 py-8 rounded-2xl">
+                <!-- wraper-starts -->
+                <div class="sides flex flex-col gap-16">
+                    <div>
+                        <a href="#"
+                            class="flex items-center gap-x-4 shadow-md w-[100%] shadow-gray-500 px-4 py-3 rounded-md">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            Dashboard
+                        </a>
+                    </div>
+
+                    <div>
+                        <h2 class="uppercase">Enquires</h2>
+                        <a href="#" class=" mt-4 flex items-center gap-x-4">
+                            <i
+                                class="fa-solid fa-bolt shadow-md w-auto text-center shadow-gray-500 px-2 py-2 rounded-md"></i>
+                            <span>Enquires</span>
+                        </a>
+                        </a>
+                    </div>
+
+                    <div>
+                        <h2 class="uppercase">Managed Services</h2>
+                        <a href="#" class="flex items-center gap-x-4 mt-4">
+                            <i
+                                class="fa-solid fa-gear shadow-md w-auto text-center shadow-gray-500 px-2 py-2 rounded-md"></i>
+                            <span>Services</span>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col gap-6">
+                        <h2 class="uppercase">Site Management</h2>
+                        <a href="#" class="flex items-center gap-x-4">
+                            <i
+                                class=" fa-solid fa-user-plus shadow-md w-auto text-center shadow-gray-500 px-2 py-2 rounded-md"></i>
+                            <span>Admin</span>
+                        </a>
+
+                        <a href="#" class="flex items-center gap-x-4">
+                            <i
+                                class="fa-solid fa-globe shadow-md w-auto text-center shadow-gray-500 px-2 py-2 rounded-md"></i>
+                            <span>Social Media</span>
+                        </a>
+
+                        <a href="#" class="flex items-center gap-x-4">
+                            <i
+                                class="fa-solid fa-globe shadow-md w-auto text-center shadow-gray-500 px-2 py-2 rounded-md"></i>
+                            <span>Settings</span>
+                        </a>
+                    </div>
+                    <!-- wraper-starts -->
+                </div>
+
+
+                <div class="content-area mx-32 flex flex-col gap-y-8">
+                    <h2>Enquries.List</h2>
+                    <br>
+                    <div class="flex gap-[850px]">
+                        <select name="totals" class="border-0 outline-none shadow-lg shadow-gray-500 rounded-md">
+                            <option value="10">10</option>
+                            <option value="9">9</option>
+                            <option value="8">8</option>
+                            <option value="7">7</option>
+                        </select>
+                        <input type="text" name="search" class="px-4 shadow-md shadow-gray-400 border-0 rounded-md"
+                            placeholder="Search">
+                    </div>
+                    <table class=" px-4 py-3">
+                        <thead class="text-center">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody class="text-center">
+                            <tr>
+                                <td>1</td>
+                                <td>admin</td>
+                                <td>admin@a.com</td>
+                                <td>Super_Admin</td>
+                                <td class="flex gap-x-4" style="border: none; outline: none;">
+                                    <button class="bg-blue-500 px-4 py-2" href="#">Create</button>
+                                    <button class="bg-green-600 px-4 py-2" href="#">Read</button>
+                                    <button class="bg-gray-500 px-4 py-2" href="#">Update</button>
+                                    <button class="bg-red-500 px-4 py-2" href="#">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>admin2</td>
+                                <td>admin2@a.com</td>
+                                <td>Admin</td>
+                                <td>Read</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>admin3</td>
+                                <td>admin@3a.com</td>
+                                <td>User</td>
+                                <td>Update</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>admin4</td>
+                                <td>admin4@a.com</td>
+                                <td>User</td>
+                                <td>Delete</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <h1 class="w-[200px]">Showing 1 out of 3 entries</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-4 bg-gradient-to-r from-black from  via-gray-700 to-black to-90%">
+        <div class="container w-[100%] mx-auto my-8 flex justify-between">
+            <p class="text-white">2024 &copy; made with tailwind by <span class="font-semibold text-gray-500 underline">Fouz Ul
+                    Azeem</span> for a better View!</p>
+            <div class="flex gap-8">
+                <a href="#" class="text-gray-200">About US</a>
+                <a href="#" class="text-gray-200">Contact Us US</a>
+                <a href="#" class="text-gray-200">Further More</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
